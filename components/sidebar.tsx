@@ -8,8 +8,9 @@ import {usePathname} from "next/navigation";
 
 
 import {cn} from "@/lib/utils";
-import { LayoutDashboard, MessageSquare, Settings } from "lucide-react";
+import { LayoutDashboard, MessageSquare, Settings, StethoscopeIcon, ViewIcon, WavesIcon } from "lucide-react";
 import { FreeCounter } from "./free-counter";
+import { boolean } from "zod";
 
 const montserrat = Montserrat ({ weight: "600",
                                 subsets: ["latin"] 
@@ -23,10 +24,22 @@ const routes = [
        color: "text-sky-500",
     },
     {
-        label: "NaharaMed", 
-        icon: MessageSquare,
+        label: "MedCon", 
+        icon: StethoscopeIcon,
         href: "/conversation",
         color: "text-violet-500",
+     },
+     {
+        label: "Vision", 
+        icon: ViewIcon,
+        href: "/conversationx",
+        color: "text-emerald-500",
+     },
+     {
+        label: "Sounds", 
+        icon: WavesIcon,
+        href: "/conversationxx",
+        color: "text-orange-500",
      },
      {
         label: "Settings", 

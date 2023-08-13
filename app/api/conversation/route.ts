@@ -31,6 +31,9 @@ export async function POST(
         }
         const freeTrail = await checkApiLimit();
 
+        // For all the services or products on the platform, always check for the free trail expiry and raise the 403,
+        // catch same in the page.tsx and throw the upgrade modal to the user.
+
         if (!freeTrail){
             return new NextResponse("Free trial has expired.", {
                 status: 403

@@ -8,21 +8,28 @@ import { useRouter } from "next/navigation";
 
 import { Card } from "@/components/ui/card";
 import {cn} from "@/lib/utils";
-import { ArrowRight, MessageSquare } from "lucide-react";
+import { ArrowRight, MessageSquare, StethoscopeIcon, ViewIcon, WavesIcon } from "lucide-react";
 
 const tools = [
   {
-    label : "Nahara-Med",
-    icon: MessageSquare,
+    label : "Nahara MedCon",
+    icon: StethoscopeIcon,
     color: "text-violet-500",
     bgColor: "bg-violet-500/10",
     href: "/conversation"
   },
   {
-    label : "Nahara-Med",
-    icon: MessageSquare,
+    label : "Nahara Vision",
+    icon: ViewIcon,
     color: "text-emerald-500",
     bgColor: "bg-emerald-500/10",
+    href: "/conversation"
+  },
+  {
+    label : "Nahara Sounds",
+    icon: WavesIcon,
+    color: "text-orange-500",
+    bgColor: "bg-orange-500/10",
     href: "/conversation"
   },
   //You may add more products
