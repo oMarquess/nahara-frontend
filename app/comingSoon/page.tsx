@@ -30,7 +30,7 @@ const Page: React.FC = () => {
 						<div className="flex flex-1">
 							<Input
 								type="email"
-								placeholder="@example.email.com"
+								placeholder="example@email.com"
 								className="text-gray-700"
 							/>
 						</div>
