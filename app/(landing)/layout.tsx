@@ -3,8 +3,8 @@ const LandingLayout = ({
 }: {children:React.ReactNode;
 }) => {
     return (  
-        <main className="h-full bg-[#111827] overflow-auto">
-            <div className="mx-auto max-w-screen-xl h-gull w-full">
+        <main>
+            <div>
                 {
                     children
                 }
