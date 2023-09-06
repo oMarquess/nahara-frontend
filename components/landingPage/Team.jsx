@@ -129,7 +129,7 @@ const Team = () => {
     }
 
     return (
-        <Box sx={{ backgroundColor: "#E6F0FF", py: 1}}>
+        <Box sx={{ backgroundColor: "#E6F0FF", py: 1}} id="team">
             <Container>
                 <CustomBox>
                     <Box sx={{ flex: "1 1 0px" }}>

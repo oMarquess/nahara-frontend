@@ -29,7 +29,7 @@ const AboutUs = () => {
     }));
 
     return (
-        <Box sx={{ backgroundColor: "#ffff", mt: 3}}>
+        <Box sx={{ backgroundColor: "#ffff", mt: 3}} id="aboutUs">
             <Container>
                 <Typography
                     variant="body2"

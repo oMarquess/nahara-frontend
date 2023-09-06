@@ -2,6 +2,7 @@
 import * as React from "react";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
+import Link from "@mui/material/Link";
 import MenuIcon from "@mui/icons-material/Menu";
 import FeaturedPlayListIcon from "@mui/icons-material/FeaturedPlayList";
 import MiscellaneousServicesIcon from "@mui/icons-material/MiscellaneousServices";
@@ -66,13 +67,13 @@ export const Navbar = () => {
     </Box>
   );
 
-  const NavLink = styled(Typography)(({ theme }) => ({
+  const NavLink = styled(Link)(({ theme }) => ({
     fontSize: "14px",
     color: "#4F5361",
     fontWeight: "bold",
     cursor: "pointer",
     "&:hover": {
-      color: "#fff",
+      color: "#A2195B",
     },
   }));
 
@@ -135,11 +136,12 @@ export const Navbar = () => {
         </Box>
 
         <NavbarLinksBox>
-          <NavLink variant="body2">Home</NavLink>
-          <NavLink variant="body2">Features</NavLink>
-          <NavLink variant="body2">Products</NavLink>
-          <NavLink variant="body2">Team</NavLink>
-          <NavLink variant="body2">Contact</NavLink>
+          <NavLink variant="body2" href="/" underline="none">Home</NavLink>
+          <NavLink variant="body2" href="#products" underline="none">Products</NavLink>
+          <NavLink variant="body2" href="#medcon" underline="none">MedCon</NavLink>
+          <NavLink variant="body2" href="#aboutUs" underline="none">About Us</NavLink>
+          <NavLink variant="body2" href="#team" underline="none">Team</NavLink>
+          <NavLink variant="body2" href="#contact" underline="none">Contact</NavLink>
         </NavbarLinksBox>
       </Box>
 
@@ -151,12 +153,12 @@ export const Navbar = () => {
           gap: "1rem",
         }}
       >
-        <NavLink variant="body2">Login</NavLink>
-        <CustomButton
+        <NavLink variant="body2" href="/sign-in" underline="none">Login</NavLink>
+        <a href="/sign-up"><CustomButton
           backgroundColor="#A2195B"
           color="#fff"
           buttonText="Register"
-        />
+        /></a>
       </Box>
     </NavbarContainer>
   );

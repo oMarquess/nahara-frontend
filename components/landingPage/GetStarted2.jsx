@@ -3,7 +3,6 @@ import { styled, Typography } from "@mui/material";
 import { Box, Container } from "@mui/system";
 import React from "react";
 import CustomButton from "./CustomButton";
-import { ReactComponent as SvgDecoratorBlob1 } from "../../public/svg-decorator-blob-9.svg";
 import Image from 'next/image'
 
 const GetStarted2 = () => {
@@ -67,17 +66,21 @@ const GetStarted2 = () => {
             <TextBox>Elevate your practice with MedCon and experience the future of healthcare consultation. </TextBox>
 
             <LinksBox >
+            <a href="/dashboard">
               <CustomButton sx={{marginRight: "10px"}} backgroundColor="#A2195B"
               color="#fff"
               buttonText="Get Started"
               getStartedBtn={true}
               ></CustomButton>
+            </a>
 
+            <a href="#contact">
               <CustomButton sx={{ marginRight: "10px" }} backgroundColor="#A2195B"
               color="#fff"
               buttonText="Contact Us"
               getStartedBtn={true}
               ></CustomButton>
+            </a>
             </LinksBox>
           </RowBox>
 

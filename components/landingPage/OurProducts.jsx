@@ -11,7 +11,7 @@ const OurProducts = () => {
     const services = [
         {
             imageSrc: chatIconImage,
-            title: "MedCon",
+            title: "Nahara MedCon",
             description: "MedCon provides evidence-based suggestions, empowering clinicians with valuable insights to make informed decisions.",
             url: "#",
             availability: "",
@@ -25,7 +25,7 @@ const OurProducts = () => {
         },
         {
             imageSrc: baseIconImage,
-            title: "Nahara Waves",
+            title: "Nahara Sounds",
             description: "Lorem ipsum donor amet siti ceali placeholder text",
             url: "#",
             availability: "coming soon",
@@ -66,7 +66,7 @@ const OurProducts = () => {
     }))
 
     return (
-        <Box sx={{ my: 3, py: 10 }}>
+        <Box sx={{ my: 3, py: 10 }} id="products"> 
             <Container>
                 <Box>
                     <Typography

@@ -60,7 +60,7 @@ const ContactUs = () => {
     }));
 
     return (
-        <Box sx={{ backgroundColor: "#E6F0FF", my: 3, py: 8 }}>
+        <Box sx={{ backgroundColor: "#E6F0FF", my: 3, py: 8 }} id="contact">
             <Container>
                 <CustomBox>
                     <Box sx={{ flex: "1" }}>

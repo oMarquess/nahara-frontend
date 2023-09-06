@@ -58,12 +58,14 @@ const Hero = () => {
             >
               Enhance your healthcare experience with meticulously crafted tools aimed at alleviating stress and optimizing patient care. Achieve more while mitigating stress
             </Typography>
+            <a href="#aboutUs">
             <CustomButton
               backgroundColor="#A2195B"
               color="#fff"
               buttonText="More About Us"
               heroBtn={true}
             />
+            </a>
           </Box>
 
           <Box sx={{ flex: "1.25" }}>

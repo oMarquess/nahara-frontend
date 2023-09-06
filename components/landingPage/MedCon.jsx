@@ -4,6 +4,7 @@ import { Box, Container } from "@mui/system";
 import React from "react";
 import medcon from "../../public/medcon.png"
 import Image from 'next/image'
+import CustomButton from "./CustomButton";
 
 const MedCon = () => {
     const CustomBox = styled(Box)(({ theme }) => ({
@@ -37,7 +38,7 @@ const MedCon = () => {
     }));
 
     return (
-        <Box sx={{ py: 10, backgroundColor: "#E6F0FF", }}>
+        <Box sx={{ py: 10, backgroundColor: "#E6F0FF", }} id="medcon">
             <Container>
                 <CustomBox>
                     <ImgContainer>
@@ -75,12 +76,13 @@ const MedCon = () => {
                             {/* Elevate your practice with MedCon and experience the future of healthcare consultation. */}
                         </Typography>
 
-                        {/* <CustomButton
-              backgroundColor="#A2195B"
-              color="#fff"
-              buttonText="Try Demo"
-              heroBtn={true}
-            /> */}
+                        <a href="/dashboard">
+                            <CustomButton sx={{ marginRight: "10px" }} backgroundColor="#fff"
+                                color="#A2195B"
+                                buttonText="Get Started"
+                                getStartedBtn={true}
+                            ></CustomButton>
+                        </a>
                     </Box>
                 </CustomBox>
 
